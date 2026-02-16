@@ -14,7 +14,7 @@ jobs:      #son but est de faire build and push
       - name: login to dockerhub 
         uses: docker/login-action@v3  # uses katabtlo url cz hay l url hiye 3ibara 3an workflow jehze bigithub lata3ml action m3ayane 
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }} # wa2ta fetet3ala el login-action bl github l2it eno v3 hiye lmoteha w 3atene ektob username w password bihayda el chakel
+          username: ${{ secrets.DOCKERHUB_USERNAME }} # (belfichier hiye vvars. bas ana hatayta secret) wa2ta fetet3ala el login-action bl github l2it eno v3 hiye lmoteha w 3atene ektob username w password bihayda el chakel
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: build and push docker image to docker hub
