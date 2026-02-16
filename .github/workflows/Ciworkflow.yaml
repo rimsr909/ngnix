@@ -3,8 +3,8 @@ name: Build and push docker image #haida lname ana bektbo metl mabade
 on: # hone b2elo listen lal events lirah ekteblak yehon
   push:
     #branches: [ $main ] #listen la aya push byo7sal 3ala el branche li huwe main eza ana hadatetlo main w fihot hot aya bracnch tene 8er main
- # pull_request:
-  #  branches: [ $main ] # w kmn listen la aya pull request byohsal 3ala lbrach main 
+  #pull_request:
+  # branches: [ $main ] # w kmn listen la aya pull request byohsal 3ala lbrach main 
 
 jobs:      #son but est de faire build and push 
   build-and-push:
