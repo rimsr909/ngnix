@@ -2,8 +2,7 @@ name: Build and push docker image #haida lname ana bektbo metl mabade
 
 on: # hone b2elo listen lal events lirah ekteblak yehon
   push:
-
-    
+   
 jobs:      #son but est de faire build and push 
   build-and-push:
     runs-on: ubuntu-latest #hay bhadeda hasab l os lal virtual machine aw EC2 lira7 ya3ml github run lal workflow 3laya 
@@ -28,21 +27,3 @@ jobs:      #son but est de faire build and push
         # el . li be ligne deocker build hiye 3ibara 3an ./Dockerfile ya3ne bedel 3al dockerfile yali bel repertoire courant 
         # hone ba3te lal image tag ba3ed les 2 point w kamn bas bade samiya esm el username li3nde 3al githib (cz 3atul bas a3ml push 3a repositry ana 3mltela creation le nom va commencer par le username/repository) w b7ot : w ba3tiya el esm libade samiya fi lihuwe el tag
         
-
-
-      #eza mabade esta3mel .env w e5od meno el secret aw chi bl dockerfile bektob lpush wel buil bhay ltari2a lita7et 
-      #- name: Build image
-      # run: docker build -t myimage:latest .
-
-      # - name: Push image
-      #  run: docker push myimage:latest
-
-
-     #laaw ana mabsabet esm el repository wel tag lala image bl env hk bisir chakl el commande 
-     # - name: build and push docker image to docker hub
-     #   run: |  
-     #     docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest .  
-     #     docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest
-          
-
-
